@@ -10,42 +10,71 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary">
-        <TextView
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon"
+            android:scaleType="center"/>
+        <!--TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/icon"
             android:text="@string/app_name"
             android:textColor="@android:color/white"
             android:textSize="20sp"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"/-->
+
+        <!-- Search start-->
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginTop="12dp">
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_toRightOf="@id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:drawableRight="@mipmap/search_left"
+                android:background="@drawable/shape_life_search"
+                android:hint="请输入商户或地址"
+                android:textColorHint="#b7b7b7"
+                android:paddingLeft="12dp"
+                android:paddingRight="8dp"
+                android:textSize="12dp"/>
+        </LinearLayout>
+        <!-- Search end  -->
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/qr_scan"
+            android:scaleType="center"
+            android:layout_toLeftOf="@id/more"/>
         <ImageView
             android:id="@+id/more"
-            android:layout_width="?attr/actionBarSize"
+            android:layout_width="28dp"
             android:layout_height="match_parent"
             android:src="@mipmap/common_forward_normal"
             android:scaleType="center"
             android:layout_alignParentRight="true"/>
     </RelativeLayout>
 
-    <CheckBox
-        android:id="@+id/cb_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginLeft="10dp"
-        android:checked="true"
-        android:text="显示菜单图标"/>
-    <CheckBox
-        android:id="@+id/cb_bg"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginLeft="10dp"
-        android:checked="true"
-        android:text="背景变暗"/>
-    <CheckBox
-        android:id="@+id/cb_anim"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginLeft="10dp"
-        android:checked="true"
-        android:text="显示动画"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tl_4"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/colorPrimary"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
 </LinearLayout>

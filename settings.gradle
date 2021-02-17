@@ -1,1 +1,1 @@
-include ':app', ':toprightmenu'
+include ':app', ':toprightmenu', ':FlycoTabLayout_Lib'

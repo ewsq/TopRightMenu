@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TopRightMenuDemo.iml" filepath="$PROJECT_DIR$/TopRightMenuDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/toprightmenu/toprightmenu.iml" filepath="$PROJECT_DIR$/toprightmenu/toprightmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TopRightMenu.iml" filepath="$PROJECT_DIR$/.idea/modules/TopRightMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlycoTabLayout_Lib/TopRightMenu.FlycoTabLayout_Lib.iml" filepath="$PROJECT_DIR$/.idea/modules/FlycoTabLayout_Lib/TopRightMenu.FlycoTabLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TopRightMenu.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TopRightMenu.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/toprightmenu/TopRightMenu.toprightmenu.iml" filepath="$PROJECT_DIR$/.idea/modules/toprightmenu/TopRightMenu.toprightmenu.iml" />
     </modules>
   </component>
 </project>
