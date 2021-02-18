@@ -5,8 +5,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.zaaach.toprightmenudemo.R;
+import com.zaaach.toprightmenudemo.alipay.MyGridAdapter;
+import com.zaaach.toprightmenudemo.alipay.MyGridView;
 import com.zaaach.toprightmenudemo.view.RadarView;
 import com.zaaach.toprightmenudemo.view.ScanView;
 
@@ -78,7 +81,20 @@ public class FirstFragment extends Fragment {
         RadarView radarView = v.findViewById(R.id.radar);
         radarView.start();
 
+        StringBuffer sb=new StringBuffer();
+        sb.append("纬度：22.369111 \r\n");
+        sb.append("经度：113.591487 \r\n");
+        sb.append("海拨：5.29   精度：+-15.00 \r\n");
+        sb.append("天气：晴 14~23℃ 静风 \r\n");
+        TextView gpsinfo = v.findViewById(R.id.gpsinfo);
+        gpsinfo.setText(sb.toString());
 
+        TextView address = v.findViewById(R.id.address);
+        address.setText("珠海市香洲区港湾大道1873号靠近大洲科技园");
+
+
+        MyGridView gridview=(MyGridView) v.findViewById(R.id.gridview);
+        gridview.setAdapter(new MyGridAdapter(v.getContext()));
 
         return v;
     }

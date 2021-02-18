@@ -19,6 +19,8 @@ import com.flyco.tablayout.listener.OnTabSelectListener;
 import com.zaaach.toprightmenu.MenuItem;
 import com.zaaach.toprightmenu.TopRightMenu;
 import com.zaaach.toprightmenudemo.adapter.MyPagerAdapter;
+import com.zaaach.toprightmenudemo.alipay.MyGridAdapter;
+import com.zaaach.toprightmenudemo.alipay.MyGridView;
 import com.zaaach.toprightmenudemo.ui.FirstFragment;
 import com.zaaach.toprightmenudemo.ui.SimpleCardFragment;
 import com.zaaach.toprightmenudemo.utils.ViewFindUtils;
