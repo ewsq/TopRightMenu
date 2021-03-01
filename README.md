@@ -8,7 +8,7 @@
 
 # Gif
 
-![image](https://github.com/zaaach/TopRightMenu/raw/master/art/screen.gif)
+![image](./art/screen.gif)
 
 图片中看起来比较卡顿，但真机运行是正常的.
 
